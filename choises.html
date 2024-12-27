@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Role & Branch Selection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Branch & Role Selection" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons CSS -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App CSS -->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Center and styling -->
+    <style>
+        .auth-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        
+        .auth-full-page-content {
+            min-width: 700px;
+            padding: 2rem;
+        }
+
+        .auth-logo {
+            text-align: center;
+        }
+
+        .auth-logo img {
+            height: 28px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="auth-page">
+        <div class="auth-full-page-content d-flex p-4">
+            <div class="w-100">
+                <div class="text-center">
+                    <a href="index.html" class="d-block auth-logo mb-4">
+                        <img src="assets/images/logo-sm.svg" alt="Logo"> <span class="logo-txt">CMC.LESSONS</span>
+                    </a>
+                </div>
+                <div class="auth-content">
+                    <h5 class="text-center mb-4">Choose Your Role & Branch</h5>
+                    <form>
+                        <!-- Role Selection -->
+                        <div>
+                            <h5 class="font-size-14 mb-3">select your brench informations :</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="mb-3 select">
+                                        <label for="choices-single-default" class="form-label font-size-13 text-muted">select your pole</label>
+                                        <select class="form-control" data-trigger name="choices-single-default"
+                                            id="choices-single-pole"
+                                            placeholder="This is a search placeholder">
+                                            <option value="">This is a placeholder</option>
+                                            <option value="DIA">DIA</option>
+                                            <option value="GC">GC</option>
+                                            <option value="BTP">BTP</option>
+                                            <option value="THR">THR</option>
+                                            <option value="AIG">AIG</option>
+                                            <option value="AI">AI</option>
+                                            <option value="ARTISANAT">ARTISANAT</option>
+                                            <option value="TL">TL</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="choices-single-groups" class="form-label font-size-13 text-muted">Select your field</label>
+                                        <select class="form-control" data-trigger name="choices-single-groups" id="choices-single-filier">
+                                            <option value="">select your pole first</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-lg-4 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="choices-single-no-search" class="form-label font-size-13 text-muted">Options added via config with no search</label>
+                                        <select class="form-control" name="choices-single-no-search"
+                                            id="choices-single-no-search">
+                                            <option value="0">Zero</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="choices-single-no-sorting" class="form-label font-size-13 text-muted">Options added
+                                            via config with no search</label>
+                                        <select class="form-control" name="choices-single-no-sorting"
+                                            id="choices-single-no-sorting">
+                                            
+                                        </select>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- end row -->
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="mb-3">
+                            <button class="btn btn-primary w-100" type="submit">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="choises.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+</body>
+
+</html>
+    

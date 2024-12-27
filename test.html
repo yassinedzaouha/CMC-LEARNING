@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dependent Dropdowns</title>
+</head>
+<body>
+  <h2>Dependent Dropdown Example</h2>
+  
+  <label for="select1">Select Category:</label>
+  <select id="select1">
+    <option value="">--Choose an option--</option>
+    <option value="fruits">Fruits</option>
+    <option value="vehicles">Vehicles</option>
+  </select>
+
+  <label for="select2">Select Item:</label>
+  <select id="select2" disabled>
+    <option value="">--Choose an option--</option>
+  </select>
+
+  <script>
+    // Data for the dependent dropdowns
+    const optionsMap = {
+      fruits: [
+        { value: "apple", text: "Apple" },
+        { value: "banana", text: "Banana" },
+        { value: "cherry", text: "Cherry" },
+      ],
+      vehicles: [
+        { value: "car", text: "Car" },
+        { value: "bike", text: "Bike" },
+        { value: "truck", text: "Truck" },
+      ],
+    };
+
+    const select1 = document.getElementById("select1");
+    const select2 = document.getElementById("select2");
+
+    // Event listener for select1
+    select1.addEventListener("change", function () {
+      const selectedCategory = select1.value;
+
+      // Clear previous options in select2
+      select2.innerHTML = '<option value="">--Choose an option--</option>';
+
+      if (selectedCategory && optionsMap[selectedCategory]) {
+        // Populate select2 with new options
+        optionsMap[selectedCategory].forEach((option) => {
+          const opt = document.createElement("option");
+          opt.value = option.value;
+          opt.textContent = option.text;
+          select2.appendChild(opt);
+        });
+
+        select2.disabled = false;
+      } else {
+        // Disable select2 if no valid option is selected in select1
+        select2.disabled = true;
+      }
+    });
+  </script>
+</body>
+</html>
