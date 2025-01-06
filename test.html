@@ -1,65 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dependent Dropdowns</title>
+    <meta charset="utf-8">
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <h2>Dependent Dropdown Example</h2>
-  
-  <label for="select1">Select Category:</label>
-  <select id="select1">
-    <option value="">--Choose an option--</option>
-    <option value="fruits">Fruits</option>
-    <option value="vehicles">Vehicles</option>
-  </select>
+    <i class="fas fa-building"></i>
+    <i class="fas fa-building"></i>
+    <i class="fas fa-swimmer"></i>
+    <i class="fas fa-concierge-bell"></i>
+    <i class="fas fa-pizza-slice"></i>
+    <i class="fas fa-wine-glass-alt"></i>
+    <i class="fas fa-coffee"></i>
+    <i class="fas fa-utensils"></i>
+    <i class="fas fa-building"></i>
+    <i class="fas fa-swimmer"></i>
+    <i class="fas fa-concierge-bell"></i>
+    <i class="fas fa-bed"></i>
+    <i class="fas fa-camera"></i>
+    <i class="fas fa-map-marker-alt"></i>
+    <i class="fas fa-plane"></i>
+    <i class="fas fa-globe"></i>
 
-  <label for="select2">Select Item:</label>
-  <select id="select2" disabled>
-    <option value="">--Choose an option--</option>
-  </select>
 
-  <script>
-    // Data for the dependent dropdowns
-    const optionsMap = {
-      fruits: [
-        { value: "apple", text: "Apple" },
-        { value: "banana", text: "Banana" },
-        { value: "cherry", text: "Cherry" },
-      ],
-      vehicles: [
-        { value: "car", text: "Car" },
-        { value: "bike", text: "Bike" },
-        { value: "truck", text: "Truck" },
-      ],
-    };
-
-    const select1 = document.getElementById("select1");
-    const select2 = document.getElementById("select2");
-
-    // Event listener for select1
-    select1.addEventListener("change", function () {
-      const selectedCategory = select1.value;
-
-      // Clear previous options in select2
-      select2.innerHTML = '<option value="">--Choose an option--</option>';
-
-      if (selectedCategory && optionsMap[selectedCategory]) {
-        // Populate select2 with new options
-        optionsMap[selectedCategory].forEach((option) => {
-          const opt = document.createElement("option");
-          opt.value = option.value;
-          opt.textContent = option.text;
-          select2.appendChild(opt);
-        });
-
-        select2.disabled = false;
-      } else {
-        // Disable select2 if no valid option is selected in select1
-        select2.disabled = true;
-      }
-    });
-  </script>
 </body>
-</html>

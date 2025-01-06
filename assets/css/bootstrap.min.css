@@ -5496,6 +5496,13 @@ fieldset:disabled .btn {
     width: 100%
 }
 
+.profile_img{
+    width: 50px;
+    border-radius: 30px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
 .card-img,
 .card-img-top {
     border-top-left-radius: calc(.25rem - 1px);
@@ -9168,7 +9175,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #5156be !important
+    color: #0057b4 !important
 }
 
 .text-secondary {

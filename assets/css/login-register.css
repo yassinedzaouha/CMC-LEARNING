@@ -1,0 +1,258 @@
+:root {
+    --zre9 : #0057b4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: var(--zre9);
+    font-family: 'Fira Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    font-size: .88rem;
+    color: #bdbdd5;
+}
+
+.content-width {
+    width: 86%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slideshow-items {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.item {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.item-image-container {
+    position: relative;
+    width: 42%;
+}
+
+.item-image-container::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 101%;
+    height: 101%;
+    /* background: #2B9CB8; */
+    opacity: 0;
+    z-index: 1;
+}
+
+.item-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    display: block;
+    transition: opacity .3s ease-out .45s;
+}
+
+.item.active .item-image {
+    opacity: 1;
+}
+
+.item.active .item-image-container::before {
+    opacity: .8;
+}
+
+.item-description {
+    position: absolute;
+    top: 182px;
+    right: 0;
+    width: 50%;
+    padding-right: 4%;
+    line-height: 1.8;
+}
+
+/* Staggered Vertical Items ------------------------------------------------------*/
+.item-header {
+    position: absolute;
+    top: 150px;
+    left: -1.8%;
+    z-index: 100;
+}
+
+.item-header .vertical-part {
+    margin: 0 -4px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: auto;
+    font-size: 7vw;
+    color: #fff;
+}
+
+.vertical-part {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.vertical-part b {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.item.active .item-header .vertical-part b,
+.item.active .item-description .vertical-part b {
+    transform: translateY(0);
+}
+
+/* Controls ----------------------------------------------------------------------*/
+.controls {
+    position: relative;
+    text-align: right;
+    z-index: 1000;
+}
+
+.controls ul {
+    list-style: none;
+}
+
+.controls ul li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    background: #bdbdd5;
+    cursor: pointer;
+}
+
+.controls ul li.active {
+    background: #6a6a77;
+}
+
+
+.form-control:focus {
+    border-color: #FFFFFF;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+    background-color: #005B6E;
+    border-color: #005B6E;
+}
+
+.btn-primary:hover {
+    background-color: #004652;
+    border-color: #004652;
+}
+
+.text-muted {
+    color: #A9D8E6 !important;
+}
+
+.social-list-item {
+    background-color: #005B6E;
+    border: 1px solid #FFFFFF;
+}
+
+.social-list-item:hover {
+    background-color: #004652;
+}
+
+.auth-content h5 {
+    color: #FFFFFF;
+}
+
+.auth-content p {
+    color: #A9D8E6;
+}
+
+.auth-page .slideshow .item-header span,
+.auth-page .slideshow .item-description span {
+    color: #FFFFFF;
+}
+
+.form-check-label {
+    color: #FFFFFF;
+}
+
+.custom-form .btn-light {
+    background-color: #FFFFFF;
+    color: #2B9CB8;
+}
+
+.custom-form .btn-light:hover {
+    background-color: #D1EEF4;
+    color: #2B9CB8;
+}
+
+.auth-page .signin-other-title h5 {
+    color: #FFFFFF;
+}
+
+.auth-page a {
+    color: #005B6E;
+}
+
+.text-primary {
+    color: var(--zre9) !important; /* Bright blue */
+}
+
+.text-secondary {
+    color: #6C757D !important; /* Subtle gray */
+}
+
+.text-muted {
+    color: #ADB5BD !important; /* Light gray */
+}
+
+.btn-primary {
+    background-color: var(--zre9);
+    border-color: var(--zre9);
+    color: #FFFFFF;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border-color: var(--zre9);
+    color: var(--zre9);
+}
+
+.input-group .form-control {
+    border-color: #DEE2E6;
+}
+
+.form-check-input:checked {
+    background-color: var(--zre9);
+    border-color: var(--zre9);
+}
+
+a.text-primary:hover {
+    color: #0056b3 !important; /* Slightly darker blue */
+}
+
+.social-list-item {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.section_right {
+    background-color: white;
+}

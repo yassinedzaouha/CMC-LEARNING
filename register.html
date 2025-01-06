@@ -1,114 +1,196 @@
 <!doctype html>
 <html lang="en">
 
+    
+<!-- Mirrored from themesbrand.com/minia/layouts/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 10:51:30 GMT -->
 <head>
-    <meta charset="utf-8" />
-    <title>Register |</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesbrand" name="author" />
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8" />
+        <title>Register | Minia - Minimal Admin & Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png">
 
-    <!-- Custom CSS for centering -->
-    <style>
-        .auth-page {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f8f9fa;
-        }
+        <!-- preloader css -->
+        <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
 
-        .auth-full-page-content {
-            width: 400px;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px gray;
-        }
-    </style>
-</head>
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="assets/css/login-register.css" rel="stylesheet" type="text/css" />
 
-<body>
-    <div class="auth-page">
-        <div class="auth-full-page-content">
-            <div class="text-center mb-4">
-                <a href="index.html" class="d-block auth-logo">
-                    <img src="assets/images/logo-sm.svg" alt="" height="28">
-                    <span class="logo-txt">CMC.LESSONS</span>
-                </a>
+    </head>
+
+    <body>
+
+    <!-- <body data-layout="horizontal"> -->
+        <div class="auth-page">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-xxl-3 col-lg-4 col-md-5 section_right">
+                        <div class="auth-full-page-content d-flex p-sm-5 p-4">
+                            <div class="w-100">
+                                <div class="d-flex flex-column h-100">
+                                    <div class="mb-4 mb-md-5 text-center">
+                                        <a href="index.html" class="d-block auth-logo">
+                                            <img src="assets/images/favicon.png" alt="" height="28"> <span class="logo-txt text-primary">CMC LEARNING</span>
+                                        </a>
+                                    </div>
+                                    <div class="auth-content my-auto">
+                                        <div class="text-center">
+                                            <h5 class="text-primary mb-0">Register Account</h5>
+                                            <p class="text-secondary mt-2">Get your account in CMC learning</p>
+                                        </div>
+                                        <form class="needs-validation custom-form mt-4 pt-2 text-secondary" novalidate action="https://themesbrand.com/minia/layouts/index.html">
+                                            <div class="mb-3">
+                                                <label for="useremail" class="form-label">Email</label>
+                                                <input type="email" class="form-control border-secondary" id="useremail" placeholder="Enter email" required>  
+                                                <div class="invalid-feedback">
+                                                    Please Enter Email
+                                                </div>      
+                                            </div>
+                    
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Username</label>
+                                                <input type="text" class="form-control border-secondary" id="username" placeholder="Enter username" required>
+                                                <div class="invalid-feedback">
+                                                    Please Enter Username
+                                                </div>  
+                                            </div>
+                    
+                                            <div class="mb-3">
+                                                <label for="userpassword" class="form-label">Password</label>
+                                                <input type="password" class="form-control border-secondary" id="userpassword" placeholder="Enter password" required>
+                                                <div class="invalid-feedback">
+                                                    Please Enter Password
+                                                </div>       
+                                            </div>
+                                            <div class="mb-4">
+                                                <p class="mb-0 text-secondary">By registering you agree to the CMC <a href="#" class="text-primary">Terms of Use</a></p>
+                                            </div>
+                                            <div class="mb-3">
+                                                <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Register</button>
+                                            </div>
+                                        </form>
+
+                                        <div class="mt-4 pt-2 text-center">
+                                            <div class="signin-other-title">
+                                                <h5 class="font-size-14 mb-3 text-muted fw-medium">- Sign up using -</h5>
+                                            </div>
+
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="javascript:void()"
+                                                        class="social-list-item bg-primary text-white border-primary">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="javascript:void()"
+                                                        class="social-list-item bg-info text-white border-info">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="javascript:void()"
+                                                        class="social-list-item bg-danger text-white border-danger">
+                                                        <i class="mdi mdi-google"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="mt-4 text-center">
+                                            <p class="text-muted mb-0">Already have an account ? <a href="login.html"
+                                                    class="text-primary fw-semibold"> Login </a> </p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end auth full page content -->
+                    </div>
+                    <!-- end col -->
+                    <div class="col-xxl-9 col-lg-8 col-md-7 section_left">
+                        <div class="content-width">
+                            <div class="slideshow">
+                                <div class="slideshow-items">
+                                    <div class="item">
+                                        <div class="item-image-container">
+                                            <img class="item-image" src="cmc_images/WhatsApp Image 2024-12-29 at 22.59.47_56793712.jpg" />
+                                        </div>
+                                        <div class="item-header">
+                                            <span class="vertical-part"><b>CMC</b></span>
+                                        </div>
+                                        <div class="item-description">
+                                            <span class="vertical-part"><b>Etablissements nouvelle génération, nos CMC vous accueillent dans un environnement exceptionnel, favorable au développement des compétences et des talents. Conçues autour de structures multisectorielles et multifonctionnelles, nos Cités vous proposent une offre de formation innovante, actualisée et diversifiée pour vous préparer aux métiers d’aujourd’hui et de demain. </b></span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image-container">
+                                            <img class="item-image" src="cmc_images/CMC_CASA -.png" />
+                                            <img class="item-image" src="cmc_images/CMC_CASA_0.png" alt="IMAAGE" />
+                                            <img class="item-image" src="cmc_images/Vue sur l’entrée principale de la CMC Casablanca-Settat.jpg" />
+                                        </div>
+                                        <div class="item-header">
+                                            <span class="vertical-part"><b>Patin</b></span>
+                                        </div>
+                                        <div class="item-description">
+                                            <span class="vertical-part"><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis at impedit ipsam placeat rerum repudiandae consequuntur, mollitia fugit assumenda reprehenderit odio magnam repellendus libero quaerat necessitatibus? Voluptates, quod est.</b></span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="item-image-container">
+                                            <img class="item-image" src="cmc_images/1000006327.jpg" />
+                                        </div>
+                                        <div class="item-header">
+                                            <span class="vertical-part"><b>Patin</b></span>
+                                        </div>
+                                        <div class="item-description">
+                                            <span class="vertical-part"><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque autem vel sint modi ad fuga voluptates in odio! Aut explicabo vel accusamus enim minima esse necessitatibus aspernatur dignissimos commodi minus!</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls">
+                                    <ul>
+                                        <li class="control" data-index="0"></li>
+                                        <li class="control" data-index="1"></li>
+                                        <li class="control" data-index="2"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
             </div>
-            <div class="auth-content">
-                <div class="text-center">
-                    <h5 class="mb-0">Register Account</h5>
-                    <p class="text-muted mt-2">Get your free cmc.lessons account now.</p>
-                </div>
-                <form class="needs-validation custom-form mt-4 pt-2" novalidate>
-                    <div class="mb-3">
-                        <label for="useremail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="useremail" placeholder="Enter email" required>
-                        <div class="invalid-feedback">Please Enter Email</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Enter username" required>
-                        <div class="invalid-feedback">Please Enter Username</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="userpassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="userpassword" placeholder="Enter password" required>
-                        <div class="invalid-feedback">Please Enter Password</div>
-                    </div>
-                    <button class="btn btn-primary w-100" type="submit">Register</button>
-                </form>
-                <div class="mt-4 pt-2 text-center">
-                    <div class="signin-other-title">
-                        <h5 class="font-size-14 mb-3 text-muted fw-medium">- Sign up using -</h5>
-                    </div>
-
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <a href="javascript:void()"
-                                class="social-list-item bg-primary text-white border-primary">
-                                <i class="mdi mdi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="javascript:void()"
-                                class="social-list-item bg-info text-white border-info">
-                                <i class="mdi mdi-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="javascript:void()"
-                                class="social-list-item bg-danger text-white border-danger">
-                                <i class="mdi mdi-google"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mt-5 text-center">
-                    <p class="text-muted mb-0">Already have an account ? <a href="login.html"
-                            class="text-primary fw-semibold"> Login </a> </p>
-                </div>
-            </div>
+            <!-- end container fluid -->
         </div>
-    </div>
 
-    <!-- JavaScript Files -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
-    <script src="assets/libs/feather-icons/feather.min.js"></script>
-    <script src="assets/libs/pace-js/pace.min.js"></script>
-</body>
 
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/pages/login-register.js"></script>
+        <!-- pace js -->
+        <script src="assets/libs/pace-js/pace.min.js"></script>
+
+        <!-- validation init -->
+        <script src="assets/js/pages/validation.init.js"></script>
+
+    </body>
+
+
+<!-- Mirrored from themesbrand.com/minia/layouts/auth-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Jul 2021 10:51:31 GMT -->
 </html>
