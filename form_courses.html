@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Role & Branch Selection</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Branch & Role Selection" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <link rel="icon" href="assets/images/favicon.png">
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+        
+        <!-- preloader css -->
+        <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
+        <!-- Custom CSS -->
+        <style>
+        :root {
+        --arrow-bg: rgba(255, 255, 255, 0.3);
+        --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+        --option-bg: white;  
+        --select-bg: rgba(255, 255, 255, 0.2);
+        }
+        body {
+            display: grid;
+            
+        }
+        .fath-sel {
+            border-radius: 8px;
+            background: #0057b4;
+            background-color: none;
+        }
+        form{
+            margin-top: 100px;
+            place-items: center;
+        }
+        /* <select> styles */
+        select {
+            /* Reset */
+            font-size: 18px;
+            appearance: none;
+            border: 0;
+            outline: 0;
+            width: 20rem;
+            height: 5rem;
+            padding: 1rem 4rem 1rem 1rem;
+            background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+                linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            /* Remove IE arrow */
+            &::-ms-expand {
+                display: none;
+            }
+            /* Remove focus outline */
+            &:focus {
+                outline: none;
+            }
+            /* <option> colors */
+            option {
+                border-radius: 8px;
+                color: inherit;
+                background-color: #7b97c9;
+            }
+        }
+
+        .invalid-feedback {
+            font-size: 15px;
+            background-color: #fff;
+            margin-top: 0;
+        }
+
+        </style>
+    </head>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="assets/images/favicon.png" class="img_logo" alt="">CMC LEARNING</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active lyan">Home</a>
+                <a href="index.html#courses" class="nav-item nav-link lyan">Courses</a>
+                <a href="index.html#about" class="nav-item nav-link lyan">About</a>
+                <a href="#" class="nav-link lyan" data-bs-toggle="dropdown">labrary</a>
+                <a href="" class="nav-item nav-link lyan">questionnaire</a>
+                <a href="" class="pt-4 px-lg-5  d-lg-block lyan"><img src="assets/images/users/avatar-2.jpg" class="profile_img" alt="">Name</a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <body>
+        <form class="needs-validation" novalidate>
+            <div class="mb-3 fath-sel">
+                <select class="form-controle" id="choices-single-field" required>
+                    <option value="" disabled selected>select your level</option>
+                </select>
+                <div class="invalid-feedback">Please select a level.</div>
+            </div>
+            <div class="mb-3 fath-sel">
+                <select class="form-controle" id="choices-single-level" required>
+                    <option value="" disabled selected>select your field</option>
+                </select>
+                <div class="invalid-feedback">Please select a field.</div>
+            </div>
+            <div class="mb-3 fath-sel">
+                <select class="form-controle" id="choices-single-nivo" required>
+                    <option value="" disabled selected>Select your year</option>
+                </select>
+                <div class="invalid-feedback">Please select a year.</div>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Submit</button>
+        </form>
+
+        <!-- JavaScript -->
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/pages/form_courses.js"></script>
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <!-- pace js -->
+        <script src="assets/libs/pace-js/pace.min.js"></script>
+        <!-- pristine js -->
+        <script src="assets/libs/pristinejs/pristine.min.js"></script>
+        <!-- form validation -->
+        <script src="assets/js/pages/form-validation.init.js"></script>
+    </body>
+
+</html>
